@@ -1,0 +1,161 @@
+Node {
+    type: 'tag',
+        name: 'img',
+            namespace: 'http://www.w3.org/1999/xhtml',
+                attribs: [Object: null prototype] {
+        class: 'd-block m-b-4 bank-logo',
+            src: 'https://dq8dwmysp7hk1.cloudfront.net/logos/citibank.svg',
+                alt: 'CITIBANK N.A.'
+    },
+    'x-attribsNamespace': [Object: null prototype] {
+        class: undefined,
+            src: undefined,
+                alt: undefined
+    },
+    'x-attribsPrefix': [Object: null prototype] {
+        class: undefined,
+            src: undefined,
+                alt: undefined
+    },
+    children: [],
+        parent: <ref * 2 > Node {
+        type: 'tag',
+            name: 'div',
+                namespace: 'http://www.w3.org/1999/xhtml',
+                    attribs: [Object: null prototype] { class: 'bg-default p-a-4' },
+        'x-attribsNamespace': [Object: null prototype] { class: undefined },
+        'x-attribsPrefix': [Object: null prototype] { class: undefined },
+        children: [
+            [Node], [Node],
+            [Node], [Node],
+            [Node], [Node],
+            [Node], [Circular * 1],
+            [Node], [Node],
+            [Node]
+        ],
+            parent: Node {
+            type: 'tag',
+                name: 'div',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [Array],
+                                        parent: [Node],
+                                            prev: [Node],
+                                                next: [Node]
+        },
+        prev: Node {
+            type: 'text',
+                data: '\n',
+                    parent: [Node],
+                        prev: [Node],
+                            next: [Circular * 2]
+        },
+        next: Node {
+            type: 'text',
+                data: '\n',
+                    parent: [Node],
+                        prev: [Circular * 2],
+                            next: null
+        }
+    },
+    prev: <ref * 3 > Node {
+        type: 'text',
+            data: '\n',
+                parent: <ref * 2 > Node {
+            type: 'tag',
+                name: 'div',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [Array],
+                                        parent: [Node],
+                                            prev: [Node],
+                                                next: [Node]
+        },
+        prev: Node {
+            type: 'tag',
+                name: 'p',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [Array],
+                                        parent: [Node],
+                                            prev: [Node],
+                                                next: [Circular * 3]
+        },
+        next: [Circular * 1]
+    },
+    next: <ref * 4 > Node {
+        type: 'text',
+            data: '\n',
+                parent: <ref * 2 > Node {
+            type: 'tag',
+                name: 'div',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [Array],
+                                        parent: [Node],
+                                            prev: [Node],
+                                                next: [Node]
+        },
+        prev: [Circular * 1],
+            next: Node {
+            type: 'tag',
+                name: 'a',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [Array],
+                                        parent: [Node],
+                                            prev: [Circular * 4],
+                                                next: [Node]
+        }
+    }
+}
+LoadedCheerio {
+    length: 0,
+        options: { xml: false, decodeEntities: true },
+    _root: <ref * 1 > LoadedCheerio {
+        '0': Node {
+            type: 'root',
+                name: 'root',
+                    parent: null,
+                        prev: null,
+                            next: null,
+                                children: [Array],
+                                    'x-mode': 'no-quirks'
+        },
+        length: 1,
+            options: { xml: false, decodeEntities: true },
+        _root: [Circular * 1]
+    },
+    prevObject: LoadedCheerio {
+        '0': Node {
+            type: 'tag',
+                name: 'img',
+                    namespace: 'http://www.w3.org/1999/xhtml',
+                        attribs: [Object: null prototype],
+                            'x-attribsNamespace': [Object: null prototype],
+                                'x-attribsPrefix': [Object: null prototype],
+                                    children: [],
+                                        parent: [Node],
+                                            prev: [Node],
+                                                next: [Node]
+        },
+        length: 1,
+            options: { xml: false, decodeEntities: true },
+        _root: <ref * 1 > LoadedCheerio {
+            '0': [Node],
+                length: 1,
+                    options: [Object],
+                        _root: [Circular * 1]
+        }
+    }
+}

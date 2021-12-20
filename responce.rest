@@ -1,0 +1,11 @@
+# GET http://localhost:2400/api/v1/balance
+
+# GET http://localhost:2400/api/v1/bank/AE470266296398279368292
+
+POST http://localhost:2400/api/v1/transfer/AE470266296398279368292
+Content-Type: application/json
+
+{
+"amount": 12233.42,
+"currency": "AED"
+}
