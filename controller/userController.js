@@ -6,6 +6,8 @@ const cheerio = require('cheerio');
 var IBAN = require('iban');
 const ibanValidator = require('../validations/ibanValidator')
 
+const fs = require('firebase-admin');
+
 exports.getBankBalance = async (req, res) => {
     console.log(balance);
     var formatedBalance = parseFloat(balance).toFixed(2)
@@ -117,14 +119,35 @@ exports.transfer = async (req, res) => {
                 })
             }else{
                 balance = parseFloat(balance) - transferAmount
-                res.status(202).send({
-                    code: 202,
-                    data: {
-                        "status": "Accepted",
-                        "aval_balance": balance
-                    }        
-                })
+
+
+                const data ={
+                    updated_at: Date.now()
+                }
+
+                try{
+                    await fs.firestore().collection('bank').doc('balance').set(data);
+
+                    res.status(202).send({
+                        code: 202,
+                        data: {
+                            "status": "Accepted",
+                            "aval_balance": balance
+                        }        
+                    })
+                }catch (err){
+                    res.status(418).send({
+                        code: 418,
+                        error: {
+                            "status": "Eroor",
+                            "message": "Something Went Wrong!" 
+                        }        
+                    })
+                }
+     
                 
+
+
             }
 
         }else{

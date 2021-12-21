@@ -2,10 +2,18 @@ var express = require('express');
 var cors = require('cors')
 var app = express();
 
+const fs = require('firebase-admin');
+
+const serviceAccount = require('./firebase/bankofseamless-firebase-adminsdk-uzixj-02d0a5a7d4.json')
+
 const userRoute = require('./routes/user')
 
 balance = process.env.BALANCE
 const port = process.env.PORT || 2400
+
+fs.initializeApp({
+    credential: fs.credential.cert(serviceAccount)
+});
 
 app.use(express.json());
 app.use(cors())
